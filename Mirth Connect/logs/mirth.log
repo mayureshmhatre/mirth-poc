@@ -1,0 +1,13 @@
+INFO  2017-10-10 12:57:03,900 [Shutdown Hook Thread] com.mirth.connect.server.Mirth: shutting down mirth due to normal request
+ERROR 2017-10-10 12:57:06,970 [Shutdown Hook Thread] Server: Exception in thread "Shutdown Hook Thread" java.lang.NullPointerException
+ERROR 2017-10-10 12:57:06,971 [Shutdown Hook Thread] Server: 	at java.util.concurrent.ConcurrentHashMap.replaceNode(Unknown Source)
+ERROR 2017-10-10 12:57:06,971 [Shutdown Hook Thread] Server: 	at java.util.concurrent.ConcurrentHashMap.remove(Unknown Source)
+ERROR 2017-10-10 12:57:06,971 [Shutdown Hook Thread] Server: 	at com.mirth.connect.server.controllers.DefaultEventController.removeListener(DefaultEventController.java:104)
+ERROR 2017-10-10 12:57:06,972 [Shutdown Hook Thread] Server: 	at com.mirth.connect.plugins.dashboardstatus.DashboardConnectorStatusMonitor.stop(DashboardConnectorStatusMonitor.java:45)
+ERROR 2017-10-10 12:57:06,978 [Shutdown Hook Thread] Server: 	at com.mirth.connect.server.controllers.DefaultExtensionController.stopPlugins(DefaultExtensionController.java:391)
+ERROR 2017-10-10 12:57:06,979 [Shutdown Hook Thread] Server: 	at com.mirth.connect.server.Mirth.shutdown(Mirth.java:335)
+ERROR 2017-10-10 12:57:06,980 [Shutdown Hook Thread] Server: 	at com.mirth.connect.server.Mirth$ShutdownHook.run(Mirth.java:432)
+INFO  2017-10-10 12:57:39,808 [Main Server Thread] com.mirth.connect.server.Mirth: Mirth Connect 3.5.0.8232 (Built on April 18, 2017) server successfully started.
+INFO  2017-10-10 12:57:39,812 [Main Server Thread] com.mirth.connect.server.Mirth: This product was developed by Mirth Corporation (http://www.mirthcorp.com) and its contributors (c)2005-2017.
+INFO  2017-10-10 12:57:39,812 [Main Server Thread] com.mirth.connect.server.Mirth: Running Java HotSpot(TM) 64-Bit Server VM 1.8.0_131 on Windows 10 (10.0, amd64), derby, with charset windows-1252.
+INFO  2017-10-10 12:57:39,822 [Main Server Thread] com.mirth.connect.server.Mirth: Web server running at http://10.1.125.52:8080/ and https://10.1.125.52:8443/
